@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+
+html{
+  scroll-behavior: smooth;
+}
+@keyframes apper {
+    from {
+        scale: 0.5
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+
+section div {
+    animation: apper both;
+    animation-timeline: view(85% 0%);
+}
