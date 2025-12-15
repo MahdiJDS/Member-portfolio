@@ -52,46 +52,10 @@ export default function Skills() {
                                 <h3 className="text-xl text-white">{category.name}</h3>
                             </div>
 
-                            {/* <div className="space-y-4">
-                                {category.skills.map((skill, skillIndex) => (
-                                    <div key={skillIndex}>
-                                        <div className="flex justify-between mb-2">
-                                            <span className="text-slate-700">{skill.name}</span>
-                                            <span className="text-slate-500">{skill.level}%</span>
-                                        </div>
-                                        <div className="w-full bg-slate-200 rounded-full h-2 overflow-hidden">
-                                            <div
-                                                className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out"
-                                                style={{ width: `${skill.level}%` }}
-                                            />
-                                        </div>
-                                    </div>
-                                ))}
-                            </div> */}
+                        
                         </div>
                     ))}
                 </div>
-
-                {/* Tools & Technologies
-                <div className="bg-white rounded-2xl shadow-lg p-8">
-                    <h3 className="text-2xl text-center mb-8 text-slate-800">
-                        Tools & Technologies
-                    </h3>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                        {tools.map((tool, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center gap-3 p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl hover:shadow-md transition-shadow"
-                            >
-                                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
-                                    <tool.icon className="w-8 h-8 text-blue-600" />
-                                </div>
-                                <span className="text-slate-700 text-center">{tool.name}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
-
              
             </div>
         </section>
