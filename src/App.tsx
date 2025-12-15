@@ -3,6 +3,7 @@ import About from './Page/About';
 import Skills from './Page/Skills';
 import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
+import Footer from './components/Footer';
 
 export default function App() {
 
@@ -24,6 +25,7 @@ export default function App() {
         <Home />
         <About />
         <Skills />
+        <Footer />
       </main>
     </div>
   );
