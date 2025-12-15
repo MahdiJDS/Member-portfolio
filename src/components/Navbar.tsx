@@ -1,12 +1,12 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-type Props = {
-  theme: 'dark'|'light',
-  setTheme: (t: 'dark'|'light') => void
-}
+// type Props = {
+//   theme: 'dark'|'light',
+//   setTheme: (t: 'dark'|'light') => void
+// }
 
-export default function Navigation({theme, setTheme}: Props) {
+export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
     const scrollToSection = (id: string) => {
@@ -24,7 +24,7 @@ export default function Navigation({theme, setTheme}: Props) {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex space-x-8 text-white">
                         <button
                             onClick={() => scrollToSection('home')}
                             className=" hover:text-blue-600 transition-colors"
@@ -42,15 +42,6 @@ export default function Navigation({theme, setTheme}: Props) {
                             className=" hover:text-blue-600 transition-colors"
                         >
                             Skills
-                        </button>
-                    </div>
-
-                    <div className="flex items-center gap-3 px-1 py-1 rounded-2xl bg-transparent border">
-                        <button
-                            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                            className="px-3 py-1 rounded-md glass pulse-accent hover:scale-105 transition-transform"
-                        >
-                            {theme === 'dark' ? 'Light' : 'Dark'}
                         </button>
                     </div>
 
