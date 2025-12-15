@@ -26,31 +26,7 @@ export default function Hero() {
               Driven to build games that are not just playable, but memorable where mechanics, design, and emotion work together to create real experiences.
             </p>
 
-            {/* Social Links */}
-            {/* <div className="flex gap-4">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all"
-              >
-                <Github className="w-5 h-5 text-slate-700" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all"
-              >
-                <Linkedin className="w-5 h-5 text-slate-700" />
-              </a>
-              <a
-                href="mailto:johndoe@example.com"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all"
-              >
-                <Mail className="w-5 h-5 text-slate-700" />
-              </a>
-            </div> */}
+           
 
             {/* CTA Buttons */}
             <div className="flex gap-4 pt-4">
@@ -68,15 +44,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image */}
           <div className="relative">
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full blur-3xl opacity-30"></div>
-              {/* <ImageWithFallback
-                src="https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b3Jrc3BhY2UlMjBkZXZlbG9wZXJ8ZW58MXx8fHwxNzY1NTM4NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Profile"
-                className="relative w-full h-full object-cover rounded-full shadow-2xl"
-              /> */}
             </div>
           </div>
         </div>
