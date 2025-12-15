@@ -43,6 +43,12 @@ export default function Navigation() {
                         >
                             Skills
                         </button>
+                        <button
+                            onClick={() => scrollToSection('contact')}
+                            className=" hover:text-blue-600 transition-colors"
+                        >
+                            Contact
+                        </button>
                     </div>
 
                     {/* Mobile menu button */}
