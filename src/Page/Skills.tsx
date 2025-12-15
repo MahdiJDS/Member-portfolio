@@ -1,22 +1,16 @@
 import {
-    Code2,
-    Smartphone,
+    Code,
     Database,
-    GitBranch,
+    Boxes ,
     Palette,
-    Server
 } from 'lucide-react';
 
 export default function Skills() {
     const technicalSkills = [
-        { name: "HTML5", icon:Code2 , level: 95 },
-        { name: "CSS3", icon: Smartphone, level: 90 },
-        { name: "JavaScript (ES6+)", icon:Database , level: 85 },
-
-        // Front-end Core
-        { name: "React.js", icon: GitBranch, level: 85 },
-        { name: "React Router", icon: Palette, level: 85 },
-        { name: "Redux Toolkit", icon: Server, level: 85 },
+        { name: "Unity", icon:Boxes  },
+        { name: "C#", icon: Code },
+        { name: "C++", icon:Database },
+        { name: "Ui Designer", icon: Palette },
 
     ];
 
@@ -37,13 +31,25 @@ export default function Skills() {
                     {technicalSkills.map((category, categoryIndex) => (
                         <div
                             key={categoryIndex}
-                            className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                            className="  relative p-6 rounded-2xl
+                bg-white/80 dark:bg-[#0b1220]/80
+                backdrop-blur-xl
+                [box-shadow:
+                0_1px_1px_rgba(255,255,255,0.4),
+                0_20px_60px_rgba(59,130,246,0.18),
+                0_40px_120px_rgba(0,0,0,0.35)]
+                hover:[box-shadow:
+                0_1px_1px_rgba(255,255,255,0.6),
+                0_30px_90px_rgba(99,102,241,0.35),
+                0_60px_160px_rgba(0,0,0,0.45)]
+                transition-all duration-500
+                group"
                         >
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
                                     <category.icon className="w-6 h-6 text-white" />
                                 </div>
-                                <h3 className="text-xl text-slate-800">{category.name}</h3>
+                                <h3 className="text-xl text-white">{category.name}</h3>
                             </div>
 
                             {/* <div className="space-y-4">
