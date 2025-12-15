@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {

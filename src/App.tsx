@@ -2,7 +2,6 @@ import Home from './Page/Home';
 import About from './Page/About';
 import Skills from './Page/Skills';
 import Navbar from './components/Navbar';
-import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 
 export default function App() {
