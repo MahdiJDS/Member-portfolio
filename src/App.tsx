@@ -3,6 +3,7 @@ import About from './Page/About';
 import Skills from './Page/Skills';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ContactUs from './Page/Contact';
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
         <Home />
         <About />
         <Skills />
+        <ContactUs />
         <Footer />
       </main>
     </div>
