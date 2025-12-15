@@ -15,20 +15,19 @@ export default function Hero() {
             <div className="space-y-2">
               <p className="text-blue-600">Hello, I'm</p>
               <h1 className="text-5xl md:text-6xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                TIA
+                Taha
               </h1>
-              <h2 className="text-2xl md:text-3xl ">
-                Full Stack Developer
+              <h2 className="text-white text-2xl md:text-3xl ">
+                Junior Game Developer
               </h2>
             </div>
             
-            <p className=" text-lg">
-              Passionate about creating beautiful, functional, and user-friendly digital experiences.
-              I turn ideas into elegant solutions.
+            <p className="text-white text-lg">
+              Driven to build games that are not just playable, but memorable where mechanics, design, and emotion work together to create real experiences.
             </p>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a
                 href="https://github.com"
                 target="_blank"
@@ -51,7 +50,7 @@ export default function Hero() {
               >
                 <Mail className="w-5 h-5 text-slate-700" />
               </a>
-            </div>
+            </div> */}
 
             {/* CTA Buttons */}
             <div className="flex gap-4 pt-4">
@@ -61,8 +60,10 @@ export default function Hero() {
               >
                 Learn More
               </button>
-              <button className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-all">
-                Download CV
+              <button
+               onClick={() => scrollToSection('skills')}
+               className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-all">
+                view Skills
               </button>
             </div>
           </div>
