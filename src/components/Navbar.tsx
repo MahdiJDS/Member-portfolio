@@ -1,10 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-// type Props = {
-//   theme: 'dark'|'light',
-//   setTheme: (t: 'dark'|'light') => void
-// }
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,25 +23,25 @@ export default function Navigation() {
                     <div className="hidden md:flex space-x-8 text-white">
                         <button
                             onClick={() => scrollToSection('home')}
-                            className=" hover:text-blue-600 transition-colors"
+                            className=" hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Home
                         </button>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className=" hover:text-blue-600 transition-colors"
+                            className=" hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             About
                         </button>
                         <button
                             onClick={() => scrollToSection('skills')}
-                            className=" hover:text-blue-600 transition-colors"
+                            className=" hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Skills
                         </button>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className=" hover:text-blue-600 transition-colors"
+                            className=" hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Contact
                         </button>
@@ -66,19 +62,19 @@ export default function Navigation() {
                         <div className="flex flex-col space-y-3">
                             <button
                                 onClick={() => scrollToSection('home')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left"
+                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
                             >
                                 Home
                             </button>
                             <button
                                 onClick={() => scrollToSection('about')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left"
+                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
                             >
                                 About
                             </button>
                             <button
                                 onClick={() => scrollToSection('skills')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left"
+                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
                             >
                                 Skills
                             </button>

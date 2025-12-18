@@ -32,13 +32,13 @@ export default function Hero() {
             <div className="flex gap-4 pt-4">
               <button
                 onClick={() => scrollToSection('about')}
-                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600  rounded-full hover:shadow-lg hover:scale-105 transition-all"
+                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600  rounded-full hover:shadow-lg hover:scale-105 transition-all cursor-pointer"
               >
                 Learn More
               </button>
               <button
                onClick={() => scrollToSection('skills')}
-               className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-all">
+               className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-all cursor-pointer">
                 view Skills
               </button>
             </div>

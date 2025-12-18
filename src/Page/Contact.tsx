@@ -58,7 +58,7 @@ export default function ContactUs() {
 
                     <button
                         type="submit"
-                        className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 to-fuchsia-500 font-semibold hover:scale-[1.02] transition-transform shadow-lg"
+                        className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 to-fuchsia-500 font-semibold hover:scale-[1.02] transition-transform shadow-lg cursor-pointer"
                     >
                         Send Message
                         <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -69,14 +69,5 @@ export default function ContactUs() {
     );
 }
 
-// function InfoItem({ icon: Icon, text }) {
-//   return (
-//     <div className="flex items-center gap-4">
-//       <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-//         <Icon className="w-5 h-5 text-indigo-400" />
-//       </div>
-//       <span className="text-gray-300">{text}</span>
-//     </div>
-//   );
-// }
+
 
