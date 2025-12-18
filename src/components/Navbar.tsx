@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
+const navItems = ['Home', 'About', 'Skills', 'Contact'];
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,36 +22,20 @@ export default function Navigation() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex space-x-8 text-white">
-                        <button
-                            onClick={() => scrollToSection('home')}
-                            className=" hover:text-blue-600 transition-colors cursor-pointer"
-                        >
-                            Home
-                        </button>
-                        <button
-                            onClick={() => scrollToSection('about')}
-                            className=" hover:text-blue-600 transition-colors cursor-pointer"
-                        >
-                            About
-                        </button>
-                        <button
-                            onClick={() => scrollToSection('skills')}
-                            className=" hover:text-blue-600 transition-colors cursor-pointer"
-                        >
-                            Skills
-                        </button>
-                        <button
-                            onClick={() => scrollToSection('contact')}
-                            className=" hover:text-blue-600 transition-colors cursor-pointer"
-                        >
-                            Contact
-                        </button>
+                        {navItems.map((nav) =>
+                            <button
+                                onClick={() => scrollToSection('about')}
+                                className=" hover:text-blue-600 transition-colors cursor-pointer"
+                            >
+                                {nav}
+                            </button>
+                        )}
                     </div>
 
                     {/* Mobile menu button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden p-2"
+                        className="md:hidden p-2 text-white cursor-pointer"
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
@@ -58,26 +43,16 @@ export default function Navigation() {
 
                 {/* Mobile Navigation */}
                 {isOpen && (
-                    <div className="md:hidden pb-4">
+                    <div className="md:hidden pb-4 text-white">
                         <div className="flex flex-col space-y-3">
-                            <button
-                                onClick={() => scrollToSection('home')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
-                            >
-                                Home
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('about')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
-                            >
-                                About
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('skills')}
-                                className="text-slate-700 hover:text-blue-600 transition-colors text-left cursor-pointer"
-                            >
-                                Skills
-                            </button>
+                            {navItems.map((nav) =>
+                                <button
+                                    onClick={() => scrollToSection('about')}
+                                    className=" hover:text-blue-600 transition-colors cursor-pointer"
+                                >
+                                    {nav}
+                                </button>
+                            )}
                         </div>
                     </div>
                 )}
